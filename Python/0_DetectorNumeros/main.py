@@ -28,6 +28,7 @@ model.fit(x_train, y_train, epochs=5)
 
 model.evaluate(x_test,  y_test, verbose=2)
 
+model.save("ModeloNumeros.h5")
 
 nueve = cv.imread('./nueve.png', cv.IMREAD_GRAYSCALE)
 nueveArray = cv.resize(nueve, (28,28))

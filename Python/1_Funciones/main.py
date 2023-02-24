@@ -15,7 +15,6 @@ model = tf.keras.models.Sequential([
     tf.keras.layers.Dense(1)
 ])
 
-#model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.0001),
 model.compile(optimizer=tf.keras.optimizers.Adam(),
               loss=tf.keras.losses.MeanSquaredError(),
               metrics=['accuracy'])
